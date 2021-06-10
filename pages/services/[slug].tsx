@@ -1,9 +1,8 @@
-import Link from "next/link";
-import { FiChevronRight, FiClock, FiMail, FiPhone } from "react-icons/fi";
 import Layout from "../../components/layout";
 import Hero from "../../components/hero";
+import { GetServerSideProps } from "next";
 
-const AboutPage = ({ slug }) => {
+const ServicePage = ({ slug }) => {
   return (
     <Layout>
       <Hero
@@ -14,8 +13,10 @@ const AboutPage = ({ slug }) => {
   );
 };
 
-export default AboutPage;
+export default ServicePage;
 
-export const getServerSideProps = ({ params: { slug } }) => {
+export const getServerSideProps: GetServerSideProps = async ({
+  params: { slug },
+}) => {
   return { props: { slug } };
 };
