@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold text-blueGray-700;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl mb-6;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl mb-5;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl mb-4;
+}
+
+h4 {
+  @apply text-xl md:text-2xl lg:text-3xl mb-3;
+}
+
+p {
+  @apply mb-2;
+}
+
+.button {
+  @apply py-3 px-5 rounded bg-primary hover:bg-primary-dark focus:bg-primary-dark transition-colors text-white text-xl;
+}
+
+.input {
+  @apply block border shadow-inner rounded py-2 px-3 w-full mb-4;
+}
